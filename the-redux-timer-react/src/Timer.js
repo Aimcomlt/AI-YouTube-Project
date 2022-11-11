@@ -6,3 +6,5 @@ class Timer {
       this.isRunning = false;
     }
   }
+
+  var myTimer = new Timer('Workout');
