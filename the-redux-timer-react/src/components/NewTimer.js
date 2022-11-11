@@ -2,15 +2,15 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 
 // We need to import our action to add a new timer
-import { addTimer } from '../actions'
+import { addTimer } from '../action/index'
 
 export default function NewTimer() {
     const [ name, setName ] = useState('')
     const dispatch = useDispatch()
 
     return (
-        <div>
-                    <input
+        <div className="NewTimer">
+          <input
                 type='text'
                 placeholder="New Timer Name"
                 name="name"

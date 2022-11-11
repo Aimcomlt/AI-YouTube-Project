@@ -1,4 +1,4 @@
-class Timer {
+ class Timer {
     // The name property is passed into the constructor and the class is initialized.
     constructor(name) {
       this.name = name;
@@ -7,4 +7,4 @@ class Timer {
     }
   }
 
-  var myTimer = new Timer('Workout');
+ var myTimer = new Timer('Workout');
