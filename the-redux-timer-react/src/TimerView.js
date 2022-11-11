@@ -2,6 +2,7 @@ import React, {  } from 'react'
 import { useDispatch } from 'react-redux'
 // Import our toggleTimer action
 import { toggleTimer } from './action'
+import { formatTime } from './utils';
 
 export default function TimerView(props) {
   // Extract these specific props to use in the component
@@ -17,6 +18,7 @@ export default function TimerView(props) {
       >
         {timer.isRunning ? "Stop" : "Start"}
       </button>
+      <h1>{formatTime(timer.time)}</h1>
     </div>
   )
 }
