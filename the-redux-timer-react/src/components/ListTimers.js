@@ -1,5 +1,4 @@
 import { useSelector } from 'react-redux'
-import { formatTime } from '../utils';
 import TimerView from '../TimerView'
 
 export default function ListTimers() {
